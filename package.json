@@ -1,9 +1,19 @@
 {
     "name": "ton-center-v3",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "type": "module",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.js"
+        },
+        "./response": {
+            "import": "./dist/response.js",
+            "require": "./dist/response.js"
+        }
+    },
     "files": [
         "src",
         "dist",

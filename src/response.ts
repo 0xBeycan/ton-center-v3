@@ -66,7 +66,7 @@ export interface WalletSatesResponse {
 
 export interface Action {
     action_id: string
-    details: string
+    details: Record<string, unknown>
     end_lt: string
     end_utime: number
     start_lt: string

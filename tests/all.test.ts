@@ -17,7 +17,7 @@ const nftId = 'kQDiYpnHCz8lP2yHtE0ePShy1dZtlOEZJOr4omdZ_zDOCMD7'
 describe('TonCenterV3', () => {
     test('getBalance', async () => {
         const response = await client.getAccountStates([address])
-        expect(response.accounts[0].balance).toEqual('99999986')
+        expect(response.accounts[0].balance).toEqual('199996009')
     })
 
     test('getAddressBook', async () => {
@@ -32,7 +32,7 @@ describe('TonCenterV3', () => {
 
     test('getWalletStates', async () => {
         const response = await client.getWalletStates([address])
-        expect(response.wallets[0].balance).toEqual('99999986')
+        expect(response.wallets[0].balance).toEqual('199996009')
     })
 
     test('getActions', async () => {
@@ -47,12 +47,12 @@ describe('TonCenterV3', () => {
 
     test('getAddressInformation', async () => {
         const response = await client.getAddressInformation(address)
-        expect(response.balance).toEqual('99999986')
+        expect(response.balance).toEqual('199996009')
     })
 
     test('getWalletInformation', async () => {
         const response = await client.getWalletInformation(address)
-        expect(response.last_transaction_lt).toEqual('29985040000001')
+        expect(response.last_transaction_lt).toEqual('30169723000001')
     })
 
     test('estimateFee', async () => {
@@ -121,7 +121,7 @@ describe('TonCenterV3', () => {
 
     test('getMessages', async () => {
         const response = await client.getMessages({ destination: address })
-        expect(response.messages[0].hash).toEqual('5qmcujlERDJiKcqehWChwAg9Oxv0BArU/fO84Lw33cg=')
+        expect(response.messages[0].hash).toEqual('GflqmJcdFhO0BNfZplg1irEuduJAschSkAGhAJeSZJM=')
     })
 
     test('getTransactions', async () => {
